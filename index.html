@@ -24,10 +24,12 @@
             <a href="./index.html" class="site-logo">Web<span class="logo-primary">Studio</span></a>
           </div>
           <ul class="site-nav">
-            <li class="nav-list-item" > <a href="./index.html" class="link currant">Студия</a></li>
+            <li class="nav-list-item" > <a href="./index.html" class="link currant">Студия</a> <a class="line"></a>
+            </li>
             <li class="nav-list-item" > <a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="nav-list-item" > <a href="" class="link link-contacts">Контакты</a></li>
           </ul>
+          
         </nav>
         <ul class="site-contacts">
           <li class="container-contacts">
@@ -51,7 +53,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="main-button">Заказать услугу</button>
+          <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -84,13 +86,22 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list-images">
             <li class="item-img">
+              <div class="container-product">
               <img src="./images/keyboard.jpg" alt="человек печатает на клавиатуре" width="370" />
+              <p class="product">Десктопные приложения</p>
+              </div>
             </li>
             <li class="item-img">
+              <div class="container-product">
               <img src="./images/hands&phones.jpg" alt="руки и телефон" width="370" />
+              <p class="product">Мобильные приложения</p>
+             </div>
             </li>
             <li class="item-img">
+              <div class="container-product">
               <img src="./images/tablet.jpg" alt="планшет с картинкой" width="370" />
+              <p class="product">Дизайнерские решения</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -260,38 +271,38 @@
         
         <ul class="clients-list">
           <li class='clients-item'> 
-        <a class="link-icon-client" href="#"><svg class='icon-client'>
-            <use href="./images/symbol-defs.svg#icon-logo-clients1" width="44" height="49"></use>
+        <a class="link-icon-client" href="#"> <svg width="44" height="49" class='icon-client'>
+            <use href="./images/symbol-defs.svg#icon-logo-clients1" ></use>
           </svg>
         </a> 
           </li>
           <li class='clients-item'>
-           <a class="link-icon-client" href="#"> <svg class='icon-client'>
-              <use href="./images/symbol-defs.svg#icon-logo-clients2" width="40" height="52"></use>
+           <a class="link-icon-client" href="#"> <svg width="40" height="52" class='icon-client'>
+              <use href="./images/symbol-defs.svg#icon-logo-clients2" ></use>
             </svg>
           </a>
           </li>
           <li class='clients-item'>
-           <a class="link-icon-client" href="#"> <svg class='icon-client'>
-              <use href="./images/symbol-defs.svg#icon-logo-clients3" width="42" height="42"></use>
+           <a class="link-icon-client" href="#"> <svg width="42" height="42" class='icon-client'>
+              <use href="./images/symbol-defs.svg#icon-logo-clients3" ></use>
             </svg>
           </a>
           </li>
           <li class='clients-item'>
-           <a class="link-icon-client" href="#"><svg class='icon-client'>
-              <use href="./images/symbol-defs.svg#icon-logo-clients4" width="80" height="42"></use>
+           <a class="link-icon-client" href="#"> <svg width="80" height="42" class='icon-client'>
+              <use href="./images/symbol-defs.svg#icon-logo-clients4" ></use>
             </svg>
           </a> 
           </li>
           <li class='clients-item'>
-           <a class="link-icon-client" href="#"><svg class='icon-client'>
-              <use href="./images/symbol-defs.svg#icon-logo-clients5" width="59" height="47"></use>
+           <a class="link-icon-client" href="#"> <svg width="59" height="47" class='icon-client'>
+              <use href="./images/symbol-defs.svg#icon-logo-clients5" ></use>
             </svg>
           </a> 
           </li>
           <li class='clients-item'>
-           <a class="link-icon-client" href="#"><svg class='icon-client'>
-              <use href="./images/symbol-defs.svg#icon-logo-clients6" width="88" height="45"></use>
+           <a class="link-icon-client" href="#"> <svg width="88" height="45" class='icon-client'>
+              <use href="./images/symbol-defs.svg#icon-logo-clients6" ></use>
             </svg>
           </a> 
           </li>
@@ -355,5 +366,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal >
+      <div class="modal">
+        <button type="button" class="btn" data-modal-close>
+          <svg width='18' height='18' class="btn-close">
+            <use href="./images/symbol-defs.svg#icon-btn-close"></use>
+           </svg>
+        </button>
+      </div>
+      <script src="./js/modal.js"></script>
+    </div>
   </body>
 </html>
