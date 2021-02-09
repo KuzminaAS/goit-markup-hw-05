@@ -105,13 +105,16 @@ img {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
 .site-nav .link.currant {
   color: var(--accent-color);
 }
+
 .link::before {
   position: relative;
 }
-.line::before {
+
+.currant::after {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -133,7 +136,7 @@ img {
   margin-left: auto;
 }
 
-.site-contacts .contacts-currant {
+.site-contacts .contacts- {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;

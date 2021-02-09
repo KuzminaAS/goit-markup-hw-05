@@ -24,7 +24,7 @@
             <a href="./index.html" class="site-logo">Web<span class="logo-primary">Studio</span></a>
           </div>
           <ul class="site-nav">
-            <li class="nav-list-item" > <a href="./index.html" class="link currant">Студия</a> <a class="line"></a>
+            <li class="nav-list-item" > <a href="./index.html" class="link currant">Студия</a> 
             </li>
             <li class="nav-list-item" > <a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="nav-list-item" > <a href="" class="link link-contacts">Контакты</a></li>
@@ -364,6 +364,13 @@
            </ul>
           </div>
         </div>
+
+        <div> 
+          <input type="email" placeholder="">
+          <b></b>
+          <button></button>
+        </div>
+
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal >
@@ -373,6 +380,59 @@
             <use href="./images/symbol-defs.svg#icon-btn-close"></use>
            </svg>
         </button>
+
+        
+        <form action="#" class="contact-form">
+         
+          <b class="call-to-action">Оставьте свои данные мы вам перезвоним</b>
+
+          <label  class="contact-label"> Имя
+          <span class="container-contact-form"> 
+          <input type="text" name="user-name" class="form-field-input"/>
+          <svg width="12" height="12" class='contact-form-icon'>
+            <use href="./images/symbol-defs.svg#icon-name"></use>
+          </svg>
+        </span> 
+       </label>
+        
+        
+        <label  class="contact-label">Телефон
+          <span class="container-contact-form">
+          <input type="tel" name="user-telephone"  class="form-field-input"/>
+          <svg width="13" height="13" class='contact-form-icon'>
+            <use href="./images/symbol-defs.svg#icon-tel"></use>
+          </svg>
+        </span>
+      </label>
+       
+         <label class="contact-label">Почта
+          <span class="container-contact-form">
+          <input type="email" name="user-email" class="form-field-input"/>
+          <svg width="15" height="12" class='contact-form-icon'>
+            <use href="./images/symbol-defs.svg#icon-email"></use>
+          </svg>
+         </span>
+        </label>
+      
+        
+          <label  class="contact-label">Коментарий
+           <span class="container-contact-form"></span>
+          <textarea name="comment" class="field-for-comment" placeholder="Введите текст"></textarea>
+         </span>
+        </label>
+
+       
+         <input type="checkbox" class="checkbox visually-hidden" name="policy" value="policy" id="policy"/>
+         <label for="policy" class="contact-policy-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="contact-form-link">Условия договора</a> 
+         </label>
+       
+
+        <div class="button-submit">
+        <button type="submit" class="form-field-button">Отправить</button>
+      </div>
+
+      </form>
+
       </div>
       <script src="./js/modal.js"></script>
     </div>
